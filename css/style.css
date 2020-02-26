@@ -374,6 +374,23 @@ main .container {
   height: 100px;
   background-color: #fff;
   border-radius: 50%;
+  border: 1px solid #fff;
+  overflow: hidden;
+}
+.eye::after {
+  content: '';
+  width: 200%;
+  height: 200%;
+  background-color: rgb(72, 211, 72);
+  position: absolute;
+  bottom: 50%;
+  right: 0;
+  transform: rotate(-15deg);
+}
+.eye.right::after {
+  right: auto;
+  left: 0;
+  transform: rotate(15deg);
 }
 .pupil {
   width: 70%;

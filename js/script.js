@@ -50,7 +50,7 @@ $(document).ready(function(){
     eyeRX = $eyeR.offset().left - $(window).scrollLeft() + $eyeR.outerWidth()/2;
     eyeRY = $eyeR.offset().top - $(window).scrollTop() + $eyeR.outerHeight()/2;
   });
-  $('body').on('mousemove scroll', function(e) {
+  $(window).on('mousemove scroll', function(e) {
     eyeLX = $eyeL.offset().left - $(window).scrollLeft() + $eyeL.outerWidth()/2;
     eyeLY = $eyeL.offset().top - $(window).scrollTop() + $eyeL.outerHeight()/2;
     eyeRX = $eyeR.offset().left - $(window).scrollLeft() + $eyeR.outerWidth()/2;
